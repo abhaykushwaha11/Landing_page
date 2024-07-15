@@ -1,0 +1,346 @@
+
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "fira sans", serif;
+    text-decoration: none;
+    list-style: none;
+    
+  } 
+  body{
+    margin: 0px;
+    
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #d3e3ef;
+    font-family: montserrat;
+  }
+  :root {
+    --primary-color: #29a598;
+    --text-color: #394c4a;
+    --background-light: #ffffff;
+    --header-height: 100vh;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 110%;
+  }
+  
+  
+
+  nav{
+    background: #48408d;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+  }
+  
+  h1.gallery{
+    margin-top: 250px;
+    color: rgb(243, 239, 239);
+    
+  }
+  label.logo{
+    color: white;
+    font-size: 60px;
+    line-height: 90px;
+    padding: 20px 100px;
+    margin-top: 22px;
+    font-weight: bold;
+    
+  }
+  nav ul{
+    float: right;
+    padding-left: 5px;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: #5abbeb;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #a789f1;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+  color: #025290;
+  background-color: #5abbeb;
+  
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  section{
+    background: url(Image/home1.jpg)  no-repeat;
+    background-size:revert-layer;
+    height: calc(100vh - 90px);
+  }
+  section.gallery{
+    background: url(Image/gallery8.jpg) no-repeat;
+    background-size:100% 80vh;
+    height: calc(80vh - 90px);
+    
+  }
+  
+  
+  
+  nav .logo { height:80px;
+    width: 200px;
+    text-align: center; 
+    padding: 10px;
+  }
+  
+  
+  
+  main {
+    margin-bottom: 4px;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  section h3 {
+    margin-top: 20vh;
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px rgb(104, 38, 38);
+  }
+  
+  section h1 {
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+  }
+  
+  section p {
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  section a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+  }
+  
+  section .btnone {
+    /*background: #00b894;*/
+    background: #fff;
+    color: #000;
+  }
+  
+  .btnone:hover {
+    background: #6af1fa;
+    color: white;
+  }
+  
+  section .btntwo {
+    background: #55f4e9;
+    color: white;
+  }
+  
+  .btntwo:hover {
+    background: #fff;
+    color: #000;
+  }
+
+  section{
+    width: 100%;
+    height: 550px;
+    background-image: url(Image/home1.jpg);
+    background-repeat: no-repeat;
+    background-position: 10%;
+  }
+  
+  .change_content:after {
+    content: "";
+    animation: changetext 10s infinite linear;
+    color: #6e5ebe;
+  }
+  
+  @keyframes changetext {
+    0% {
+      content:"kannauj";
+    }
+    20% {
+      content:"their beauty" ;
+    }
+    35% {
+      content: "kannauj";
+      
+    }
+    60% {
+      content: "their beauty";
+    }
+    80% {
+      content: "kannauj";
+    }
+    100% {
+      content: "their beauty";
+    }
+  }
+  view rawstyle.css hosted with ❤ by
+  
+
+
+
+div.hr{ padding-top: 5px;
+    height: 10px;
+}
+hr{ color: #406882;
+    margin: 4px auto;
+    height: 0;
+    padding: 0;
+    border: 1px solid ;
+    
+}
+hr.line1{ margin-top: 20px;
+    width: 5%;
+    align-items: center;
+    margin-left: 48%;
+    
+}
+hr.line2{
+    width: 5%;
+    align-items: center;
+    margin-left: 47%;
+}
+hr.line3{ 
+    width: 5%;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+h1.h1{
+  text-transform: uppercase;
+  color:#010007
+}
+
+  
+
+/*beauty content*/
+
+div.beauty{
+  background-color:#406882;
+
+justify-content: inline-block;
+text-align: center;
+margin-left: auto;
+
+}
+
+hr.beauty_line{margin: 10px;
+  color: #38E54D;
+  width: 15%;
+  margin-left: 4%;
+  
+}
+div.beauty2{
+  display: flex;
+  flex-direction: row;
+flex-wrap: wrap;
+justify-content: inline-block;
+
+}
+h1.beauty_h1{
+  color: #fff;
+  padding: 20px;
+  margin-left: 20px;
+  
+}
+.text_beauty{
+  font-size: 25px;
+  margin: 5px;
+  margin-top: 40px;
+  color: white;
+  text-align:center ;
+  justify-content: center;
+  
+}
+img.beauty_img{
+  
+  display: flex;
+  margin:auto;
+  margin-bottom: 5%;
+  flex-direction: row;
+  border-radius:2%;
+  justify-content:inline-block;
+  height: 320px;
+  width: 450px;
+}
